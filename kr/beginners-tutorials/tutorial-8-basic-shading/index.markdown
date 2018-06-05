@@ -10,7 +10,7 @@ order: 80
 tags: []
 language: kr
 ---
-
+테스트입니다... 저장소 꼬임
 In this 8th tutorial, we will learn how to do some basic shading. This includes :
 
 * Beeing more bright when closer to a light source
