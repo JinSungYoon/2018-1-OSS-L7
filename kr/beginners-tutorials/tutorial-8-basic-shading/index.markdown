@@ -10,8 +10,8 @@ order: 80
 tags: []
 language: kr
 ---
-테스트입니다... 저장소 꼬임
-In this 8th tutorial, we will learn how to do some basic shading. This includes :
+
+이번 8번째 튜토리얼에서 우리는 어떻게 기본 음영을 할 수 있는지에 대해서 배워볼 것입니다. 이것은 다음 내용을 포합니다.
 
 * Beeing more bright when closer to a light source
 * Having highlights when looking in the reflection of a light (specular lighting)
