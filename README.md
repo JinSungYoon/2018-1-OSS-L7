@@ -25,6 +25,9 @@ url : http://www.opengl-tutorial.org/kr/
 * Intermediate tutorials (9~18)
 * Miscellaneous  
 
+After finishing translation, we are going to send our translated documennts 
+to the origin project team by e-mail or pull request
+
 진행상황
 -------------
 정적 페이지 완성.
