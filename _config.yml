@@ -1,0 +1,18 @@
+# Site settings
+title: opengl-tutorial
+email: contact@opengl-tutorial.org
+url: "http://www.opengl-tutorial.org"
+description: "Free tutorials for modern Opengl (3.3 and later) in C/C++"
+baseurl: ""
+highlighter: rouge
+safe: true
+lsi: false
+source:      .
+languages_iso: [en, zh, ja, ru, fr, kr, hu]
+languages: [en, cn, jp, ru, fr, kr, hu]
+languages_names: [english, chinese, japanese, russian, français, korean, hungarian]
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: pretty
