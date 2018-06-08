@@ -19,7 +19,7 @@ language: kr
 * Cheating a lot (ambient lighting)
 
 This does NOT include :
-
+아래의 내용은 포함하지 않습니다.
 * Shadows. This is a broad topic that deserves its own tutorial(s)
 * Mirror-like reflections (this includes water)
 * Any sophisticated light-matter interaction like subsurface scattering (like wax)
