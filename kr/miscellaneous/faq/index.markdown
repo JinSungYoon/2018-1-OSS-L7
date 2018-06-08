@@ -11,15 +11,20 @@ tags: []
 language: kr
 ---
 
-# About sending e-mails...
+transrated by kim jong min from sungkyunkwan univ.
 
-Sending an e-mail to contact@opengl-tutorial.org is the most effective way to get support. However, if you have a problem, please include as much information as you can. This means at least :
+# 메일 전송과 관련하여...
 
-* OS : Gentoo ? Windows XP ? ... (remember : use the 2.1 port if you have a mac !)
-* 32 bits or 64 bits ?
-* Graphic card : NVIDIA ? AMD ? Intel ? S3 ? Matrox ? (remember : use the 2.1 port if you have an integrated GPU !)
+contact@opengl-tutorial.org으로 이메일을 보내는 것은 도움을 받을 수 있는 가장 효과적인 방법입니다.
 
-... and optionally any other information you can find useful. This may include :
+만약, 여러분이 문제가 있다면, 다음을 정보들을 최대한 상세히 메일에 적어서 보내주세요.
+
+* OS : 윈도우 xp ? Gentoo ? (주의사항: 맥 사용자라면 2.1 port를 사용할 것)
+* 32 비트 환경인지 64비트 환경인지?
+* 그래픽 카드 : NVIDIA ? AMD ? Intel ? S3 ? Matrox ? (주의사항 : 내장 GPU를 사용하는 경우에는 2.1 port를 사용하세요!)
+
+... 그리고 여러분이 유용하게 쓰일 것 같다고 생각하는 정보들도 같이 보내주세요.
+예를 들면:
 
 * GPU Driver version
 * Call stack
@@ -27,40 +32,44 @@ Sending an e-mail to contact@opengl-tutorial.org is the most effective way to ge
 * console output
 * minidump...
 
-And of course, read this FAQ first. It's called FAQ for a reason =)
-
-# I can't compile the tutorials
+그리고 다음의 FAQ를 먼저 읽어주세요.
 
 
-* Make sure you read Tutorial 1. PLEASE use CMake instead of re-creating the project. Or at least, make sure you read [Building your own C application](http://www.opengl-tutorial.org/miscellaneous/building-your-own-c-application/).
-* If you have an error related to the AssImp library, it'll be fixed soon; in the meantime, it only affects ONE tutorial, all the others will build fine.
-* If you have an error related to the AntTweakBar library, it only affects ONE tutorial, all the others will build fine.
-* If there is really a problem, don't hesitate to send us an e-mail.
+# tutuorials이 컴파일이 안돼요.
+
+* Tutorial 1을 확실히 읽어주세요. 프로젝트를 다시 생성하는 대신에 CMake를 이용해 주세요. 또는 다음 링크를 읽어주세요.[Building your own C application](http://www.opengl-tutorial.org/miscellaneous/building-your-own-c-application/).
+* 먄약 AssImp library와 관련된 에러가 발생하였다면, 빠른 시일 내에 수정될 것입니다.; 이 에러는 오직 하나의 tutorial에만 영향을 미치며, 다른 것들은 정상적으로 빌드 될 것입니다.
+* 먄약 AntTweakBar library와 관련된 에러가 발생하였다면, 빠른 시일 내에 수정될 것입니다.; 이 에러는 오직 하나의 tutorial에만 영향을 미치며, 다른 것들은 정상적으로 빌드 될 것입니다.
+* 문제가 생기면, 저희에게 주저하지 말고 메일을 보내주세요.
+
+# tutorials를 컴파일 완료하였는데, 동작하지 않습니다. 왜 그럴까요?
+
+여러가지 가능한 원인들:
+
+## 호환될지 않는 GPU/OS
+
+Intel card를 가지고 있는지 확인해주세요. glewinfo, GPU Caps viewer, 또는 다른 도구를 통해서 확인할 수 있습니다.
 
 
-# I have compiled the tutorials, but it fails at startup. What's going on ?
+최근 HD4000을 제외한 Intel cards는 OpneGL 3.3.을 지원하지 않고, 대부분은 OpenGL 2.1.을 지원합니다. 사용자는 2.1. version을 다운로드 해야 합니다.
 
-Several possible reasons :
+다른 가능성은 사용자 환경이 Mac, pre-Lion version인 경우입니다.
 
-## Incompatible GPU/OS
+## 잘못된 작업 폴더
 
-Please check if you have an Intel card. You can do so using glewinfo, GPU Caps Viewer, or any other tool.
 
-Intel cards, except recent HD4000, don't support OpenGL 3.3. As a matter of fact, most only support OpenGL 2.1. You have to download the 2.1 version from the Downloads page instead.
+사용자 분들께서 잘못된 작업 폴더에서 실행시켰을 가능성이 있습니다. .exe을 탐색기에서 더블 클릭 해주세요.
 
-The other possible reason is that you're on a Mac, with a pre-Lion version. Same stuff applies...
 
-## Wrong working directory
+IDE 설정을 위해서 튜토리얼1을 확인하시면 디버깅 할 수 있을 겁니다.
 
-Chances are that you don't run them from the right directory. Try double-clicking on the .exe from the explorer.
 
-See Tutorial 1 for configuring the IDE so that you can debug the executable.
+.exe 파일이 *build* 디렉토리에 컴파일 되고, 자동으로 *source* 디렉토리에 복사된다는 것을 주목하세요. 그러면, 그 파일들은 필요한 이미지, 3D 모델들, shaders과 같은 것을 찾을 수 있을 것입니다.
 
-Please note that the .exe is compiled in the *build* directory, but automatically copied to the *source* directory, so that it can find the needed resources (images, 3D models, shaders).
 
-## No VAO
+## VAO가 없을 때
 
-If you created a program from scratch, make sure you created a VAO :
+프로그램을 처음부터 새로 만드실 때는, VAO를 생성하셨는지 확인하여야 합니다.:
 
 ```
 GLuint VertexArrayID;
@@ -68,43 +77,46 @@ GLuint VertexArrayID;
  glBindVertexArray(VertexArrayID);
 ```
 
-## GLEW bug
+## GLEW 버그
 
-GLEW has a bug which make it impossible to use a core context (except when you use the source code from the tutorials, which has been fixed). 3 solutions:
+GLEW 는 핵심 내용을 사용하지 못하게 만드는 버그를 포함하고 있다. (수정된 tutorials의 소스코드를 사용하는 경우를 제외하고)
 
-* Ask GLFW for a Compatibility Profile instead:
+3가지 해결 방법:
+
+
+
+* GLFW에 Compatibility Profile을 요청한다:
 
 ```
 
 glfwOpenWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_COMPAT_PROFILE);
 ```
 
-* Use glewExperimental; this is the recommended way:
+* glewExperimental을 이용한다.; 가장 추천하는 방법이다:
 
 ```
 
 glewExperimental = true;
 ```
 
-* Actually fix glew... See [this patch](http://code.google.com/p/opengl-tutorial-org/source/browse/external/glew-1.5.8.patch?name=0009_33).
+* glew를 수정하기 위해서는 다음을 참고하라. [this patch](http://code.google.com/p/opengl-tutorial-org/source/browse/external/glew-1.5.8.patch?name=0009_33).
 
 
 ## CMake
 
-You did read Tutorial 1, right ? You didn't try to write your own makefile and build everything yourself, RIGHT ?
 
-# Why should I use OpenGL 3.3 if Intel and Mac can't run it ?!
+확실히 Tutorial 1을 정독 하였는가? 자신만의 고유한 makefile를 만들고 모든것을 스스로 빌드하였는가?
 
-... also known as :
 
-# Which version of OpenGL should I use ?
+# 어떤 버젼의 OpenGL을 사용하는 것이 좋을까?
 
-As a matter of fact, I don't recommend using OpenGL 3 or above for an application. I use it in the tutorials because it's the **clean** way to learn OpenGL, without all the deprecated stuff, and because once you know 3.3, using 2.1 is straighforward.
+사실은, 저희는 OpenGL 3 또는 그 이상의 버전을 애플리케이션을 위해서 추천하지 않습니다. 저희는 그 버전을 이 튜토리얼에 사용하였는데 이를 통해 **깔끔하게** OpenGL을 배울수 있기 때문입니다. 그리고 이미 3.3을 사용하는 방법을 알기 때문에 2.1 버전을 사용하시는 것을 쉬울 것 입니다.
 
-What I recommend is :
 
-* Learn in OpenGL 3.3 so that you know the "right way"
-* Set a target hardware for your application. For instance, *require *FBOs and GLSL.
+저희가 추천 드리는 것은 :
+
+* OpenGL 3.3으로 배우시면, 올바른 사용법을 익힐 수 있습니다.
+* 여러분의 애플리케이션을 위한 대상 하드웨어를 셋팅 하세요. 예를 들면,  *require *FBOs and GLSL.
 * Use GLEW to load all the extensions. At startup, refuse all hardware which hasn't the required functionality level.
 * From now on, you can code almost like if you were on 3.3, with only a few changes.
 * If you really want to deal with older/cheaper hardware , you can still deal with them by disabling effects which require FBOs, for instance.
