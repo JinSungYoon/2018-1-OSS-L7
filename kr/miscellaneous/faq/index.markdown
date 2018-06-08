@@ -117,12 +117,12 @@ glewExperimental = true;
 
 * OpenGL 3.3으로 배우시면, 올바른 사용법을 익힐 수 있습니다.
 * 여러분의 애플리케이션을 위한 대상 하드웨어를 셋팅 하세요. 예를 들면,  *require *FBOs and GLSL.
-* Use GLEW to load all the extensions. At startup, refuse all hardware which hasn't the required functionality level.
-* From now on, you can code almost like if you were on 3.3, with only a few changes.
-* If you really want to deal with older/cheaper hardware , you can still deal with them by disabling effects which require FBOs, for instance.
+* 모든 확장파일을 로드 하실때 GLEW를 사용하세요.
+* 여러분들이 버전 3.3을 사용하고 계시다면, 약간의 변경이 있을수 있지만, 대부분을 코딩하실 수 있습니다.
+* 만약 여러분이 예전의 하드웨어를 다루고 싶다면, FBOs를 요청하는 효과를 무효화 함으로써 여전히 다룰 수 있습니다.  
 
 <div><span style="font-size: medium;"><span style="line-height: 24px;">There's one big situation where you might want to use a very recent version, say 4.2 : you're a graduate student doing high-end research, you really need a recent feature, and you don't care about compatibility because your software will never be ran outside your lab. In this case, don't waste time and go straight to the highest OpenGL version your hardware supports.</span></span></div>
-
+<div><span style="font-size: medium;"><span style="line-height: 24px;">여러분들이 버전 4.2와 같은 가장 최신의 버전을 사용하고자 하는 상황이 있을 수 있습니다.: 당신이 최신 연구를 하는 대학원 생이면, 정말로 최신 기술이 필요할 것이며, 그리고 호환성은 신경쓰지 않을 것입니다. 왜냐하면 당신의 소프트웨어는 연구실 이외의 환경에서는 작동할 필요가 없으니까요. 이런 경우에, 망설이지 마시고 당신의 하드웨어가 지원하는 최신 버전의 OpenGL을 사용하세요.</span></span></div>
 
 # Where do I download OpenGL 3 ?
 
@@ -163,3 +163,4 @@ As stated in Tutorial 1, you have to select the project you want to run by right
 You have to start the program from tutorial01_first_window/, tutorial02_red_triangle/, etc. If you start the program from your IDE, you have to configure it from him to do so.
 
 Please read Tutorial 1 for details.
+
