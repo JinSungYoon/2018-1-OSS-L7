@@ -11,19 +11,22 @@ tags: []
 language: kr
 ---
 
-In this tutorial, you will learn :
+이번 튜토리얼에서 배울 내용은 다음과 같습니다.
 
-* What are UV coordinates
-* How to load textures yourself
-* How to use them in OpenGL
-* What is filtering and mipmapping, and how to use them
-* How to load texture more robustly with GLFW
-* What the alpha channel is
+* UV 좌표가 무엇인지
+* 텍스쳐를 불러오는 방법
+* OpenGL에서 텍스쳐 사용하는 방법
+* 필터링(filtering), 밉매핑(mipmapping)과 사용 방법
+* GLFW을 이용하여 더 견고하게 텍스쳐를 불러오는 방법
+* 알파 채널이 무엇인지
 
+# UV 좌표에 대해서
 # About UV coordinates
 
+메쉬에 텍스쳐를 입힐 때, 각 삼각형에 이미지의 어떤 부분이 사용 될 것인지 알려줄 방법이 있어야 합니다. 이 작업은 UV 좌표를 통해 이뤄지게 됩니다.
 When texturing a mesh, you need a way to tell to OpenGL which part of the image has to be used for each triangle. This is done with UV coordinates.
 
+각 버텍스는 위치 위에 U와 V로 이루어진 실수형 쌍을 가질 수 있습니다. 이러한 좌표는 다음과 같은 방법으로 텍스쳐에 접근하는데 사용됩니다.  
 Each vertex can have, on top of its position, a couple of floats, U and V. These coordinates are used to access the texture, in the following way :
 
 ![]({{site.baseurl}}/assets/images/tuto-5-textured-cube/UVintro.png)
