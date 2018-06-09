@@ -29,6 +29,38 @@ After finishing translation, we are going to send our translated documennts
 to the origin project team by e-mail or pull request
 
 진행상황
--------------
-정적 페이지 완성.
+------------
+2018. 06. 05
+* 정적페이지
+ - 정적 페이지 구현 -> 프로젝트 진행에 맞춰 내용 작성 예정
+* 번역작업 
+ - 김종민 : FAQ부분 수정 
+ - 이승준 : Tutorial 5번역
+ -  윤진성 : Tutorial 4 마무리 번역
+*특이사항 
+ - 작업영역을 나누어 번역작업 시작
+
+2018. 06. 07
+* 번역작업
+ -  김종민 : FAQ 번역중
+ -  이승준 : Tutorial 4번역중
+ -  윤진성 : Tutorial 4 번역중
+* 특이사항 
+ - push 과정에서 commit 자료가 사라짐...
+
+2018. 06. 08
+*번역작업
+ - 김종민 : 두번째 세번째 번역 commit
+ - 이승준 : 첫번째 번역 commit
+ - 윤진성 : 첫번째 번역 commit - Tutorial 4 번역 완료
+* 특이사항
+ - Graphics 용어 번역 및 정리에 관하여 논의
+ - push 작업시 commit 기록 보호를 위한 방법 논의
+
+2018. 06. 09
+* 번역작업
+ - 김종민 : FAQ 최종 번역 commit
+ - 이승준
+ - 윤진성
+* 특이사항.
 
